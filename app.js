@@ -1,6 +1,8 @@
 const connection = require('./elastic')
 const { MongoClient } = require('mongodb');
 
+
+// Writing it only to test git
 async function start(){
     let DbConnect = await connectionToMongo();
     let Client = await connection();
@@ -35,7 +37,7 @@ const mongoClient = new MongoClient(url);
 const dbName = "elasticDB";
 
 
-//Elastic Update Quuery
+//Elastic Update Query
 const updateElasticData = async (data)=> {
     let Client = await connection();
     const update = {
